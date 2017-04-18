@@ -489,7 +489,7 @@ func (c *Consumer) rebalance() (map[string][]int32, error) {
 // Performs the subscription, part of the mainLoop()
 func (c *Consumer) subscribe(subs map[string][]int32) error {
 	// fetch offsets
-	offsets, err := c.fetchOffsets(subs)
+	offsets, err := c.FetchOffsets(subs)
 	if err != nil {
 		_ = c.leaveGroup()
 		return err
@@ -634,7 +634,7 @@ func (c *Consumer) syncGroup(strategy *balancer) (map[string][]int32, error) {
 }
 
 // Fetches latest committed offsets for all subscriptions
-func (c *Consumer) fetchOffsets(subs map[string][]int32) (map[string]map[int32]offsetInfo, error) {
+func (c *Consumer) FetchOffsets(subs map[string][]int32) (map[string]map[int32]offsetInfo, error) {
 	offsets := make(map[string]map[int32]offsetInfo, len(subs))
 	req := &sarama.OffsetFetchRequest{
 		Version:       1,

@@ -1,15 +1,15 @@
 # Sarama Cluster
 
-[![GoDoc](https://godoc.org/github.com/bsm/sarama-cluster?status.svg)](https://godoc.org/github.com/bsm/sarama-cluster)
-[![Build Status](https://travis-ci.org/bsm/sarama-cluster.svg?branch=master)](https://travis-ci.org/bsm/sarama-cluster)
-[![Go Report Card](https://goreportcard.com/badge/github.com/bsm/sarama-cluster)](https://goreportcard.com/report/github.com/bsm/sarama-cluster)
+[![GoDoc](https://godoc.org/github.com/mmchen/sarama-cluster?status.svg)](https://godoc.org/github.com/mmchen/sarama-cluster)
+[![Build Status](https://travis-ci.org/mmchen/sarama-cluster.svg?branch=master)](https://travis-ci.org/mmchen/sarama-cluster)
+[![Go Report Card](https://goreportcard.com/badge/github.com/mmchen/sarama-cluster)](https://goreportcard.com/report/github.com/mmchen/sarama-cluster)
 [![License](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
 
 Cluster extensions for [Sarama](https://github.com/Shopify/sarama), the Go client library for Apache Kafka 0.9 (and later).
 
 ## Documentation
 
-Documentation and example are available via godoc at http://godoc.org/github.com/bsm/sarama-cluster
+Documentation and example are available via godoc at http://godoc.org/github.com/mmchen/sarama-cluster
 
 ## Example
 
@@ -22,7 +22,7 @@ import (
 	"os"
 	"os/signal"
 
-	cluster "github.com/bsm/sarama-cluster"
+	cluster "github.com/mmchen/sarama-cluster"
 )
 
 func main() {{ "ExampleConsumer" | code }}
